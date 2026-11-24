@@ -80,31 +80,31 @@
       "title": "Research Intern",
       "company": "NAAMII",
       "companyUrl": null,
-      "dates": "04/2026 \u2013 11/2026",
+      "dates": "04/2026 – 11/2026",
       "description": "Research Intern on **3DPercept**, an open-vocabulary, training-free **agentic harness** that enables multimodal language models to answer questions of varying complexity about **3D indoor scenes**, achieving **state-of-the-art results on 3D scene understanding benchmarks**.",
       "bullets": [
         "Designed a **mesh-native multi-agent protocol** for open-vocabulary **3D scene question answering**, with specialized agents for planning, viewpoint rendering, and evidence judgment before sealing answers.",
-        "Built a **cited scene-graph memory system** decoupling compact working memory from long-term view storage and claim\u2013evidence links for multi-hop spatial reasoning.",
-        "Implemented a **training-free teacher\u2013student skill development loop** that iteratively improves agent skills and tool specifications under regression gating without updating model weights.",
+        "Built a **cited scene-graph memory system** decoupling compact working memory from long-term view storage and claim–evidence links for multi-hop spatial reasoning.",
+        "Implemented a **training-free teacher–student skill development loop** that iteratively improves agent skills and tool specifications under regression gating without updating model weights.",
         "Delivered **state-of-the-art performance on 3D scene understanding benchmarks** (**ScanQA, InteriorGS, and ScanNet++**), with models equipped with 3DPercept often outperforming substantially stronger baselines."
       ]
     },
     {
-      "title": "Sectional Lead \u2014 Probability for AI (PAI)",
+      "title": "Sectional Lead — Probability for AI (PAI)",
       "company": "Stanford Online",
       "companyUrl": null,
-      "dates": "10/2026 \u2013 11/2026",
+      "dates": "10/2026 – 11/2026",
       "description": "Sectional Lead for **Probability for AI (PAI)**, a free Stanford Online course based on **CS109** material, teaching the probability foundations that modern AI is built on.",
       "bullets": [
         "Taught and mentored a section of **20 students from 14 nations** through the six-week PAI curriculum.",
-        "Guided weekly labs pairing core probability with applied builds\u2014**inference-time resource decision makers**, **probabilistic artwork**, **MLE-based trackers**, **logistic regression test suites**, **neural network visualizations**, and **probabilistic evaluation** covering fairness and calibration."
+        "Guided weekly labs pairing core probability with applied builds—**inference-time resource decision makers**, **probabilistic artwork**, **MLE-based trackers**, **logistic regression test suites**, **neural network visualizations**, and **probabilistic evaluation** covering fairness and calibration."
       ]
     },
     {
       "title": "Research Intern",
       "company": "NAAMII",
       "companyUrl": null,
-      "dates": "04/2025 \u2013 11/2025",
+      "dates": "04/2025 – 11/2025",
       "description": "Research Intern working on applied **computer vision** systems in **agricultural and biological monitoring** domains within a physics laboratory setting.",
       "bullets": [
         "Developed **deep learning-based disease detection models for rice crops**, improving classification accuracy to **~93% on curated field datasets** with a **Raspberry Pi-based edge AI application**",
@@ -117,7 +117,7 @@
       "title": "Backend Engineer and Data Scientist",
       "company": "Omdena",
       "companyUrl": "https://omdena.com/",
-      "dates": "11/2023 \u2013 03/2025",
+      "dates": "11/2023 – 03/2025",
       "description": "Collaborated with **global teams** on applied AI projects focused on **environmental monitoring** and **agricultural analytics**.",
       "bullets": [
         {
@@ -153,7 +153,7 @@
   ],
   "projects": [
     {
-      "title": "MEDIWO \u2014 LLM-Powered Medical Workflow Optimization",
+      "title": "MEDIWO — LLM-Powered Medical Workflow Optimization",
       "url": "https://github.com/clerisy47/mediwo",
       "description": "AI-assisted healthcare platform designed to optimize outpatient department (OPD) workflows by automating patient intake, reducing consultation overhead, and generating structured clinical summaries for doctors prior to consultation.",
       "bullets": [
@@ -165,19 +165,19 @@
       ]
     },
     {
-      "title": "Compliance Guide \u2014 Intelligent Compliance Analysis System",
-      "url": "https://github.com/clerisy47/Compliance_Gap_Detector_and_Policy_Analyzer",
-      "description": "AI-powered compliance intelligence platform built to simplify complex policy documents and automate security framework analysis for faster gap identification and remediation.",
+      "title": "Trustilo — Multi-Agent Security Questionnaire & Compliance Assurance",
+      "url": "https://github.com/clerisy47/Trustilo",
+      "description": "Multi-agent AI system that automates **security questionnaire responses** with a **versioned evidence graph**, ensuring every material claim is citation-backed or escalated to a human reviewer.",
       "bullets": [
-        "Built a **document intelligence pipeline** using **locally hosted Llama models** for automated policy summarization and contextual compliance interpretation.",
-        "Integrated a **RAG-based retrieval system** that improved compliance recommendation accuracy from **76% to 95%**.",
-        "Developed a **comparative evaluation framework** using dual LLM inference pipelines to benchmark response consistency across compliance scenarios.",
-        "Processed and indexed **1,200+ compliance documents** across security standards including ISO 27001 and SOC 2.",
-        "Reduced average compliance analysis time from **4 hours to under 20 minutes per document set**."
+        "Designed a **multi-agent pipeline** (Supervisor, Librarian, Drafter, Critic, Mapper) over a **versioned evidence graph library**, with typed agent handoffs and cite-or-abstain answers tied to **filename and line range**.",
+        "Built agentic **GraphRAG retrieval** that discovers, reads complete evidence pages, and follows graph links before drafting—outperforming seed-only and single-shot RAG baselines.",
+        "Achieved **0.94 faithfulness** and **96% valid citations** on **CAIQ v4.1 (283 questions)**, cutting unsupported claims **8× vs direct LLM** and catching **91% of missing-evidence cases**.",
+        "Reduced reviewer time from **9.0 to 1.2 minutes per question** (**7.5× faster than manual**) while routing uncertain answers to human/SME review.",
+        "Implemented with **Python, FastAPI, Pydantic, and Obsidian GraphRAG**, with swappable model adapters (**OpenAI, Gemini, Meta**) and deterministic CI quality gates."
       ]
     },
     {
-      "title": "Volt Vision \u2014 Household Energy Demand Forecasting for Nepal",
+      "title": "Volt Vision — Household Energy Demand Forecasting for Nepal",
       "url": "https://github.com/clerisy47/VoltVision",
       "description": "Machine learning-based forecasting system for predicting household energy demand and electricity pricing trends in Nepal.",
       "bullets": [
@@ -271,14 +271,14 @@
       "degree": "Bachelor's in Computer Engineering",
       "school": "Pulchowk Engineering Campus",
       "location": "Kathmandu, Nepal",
-      "dates": "2023 \u2013 present",
+      "dates": "2023 – present",
       "detail": "Average Percentage: 82.4"
     },
     {
       "degree": "High School",
       "school": "Capital College and Research Centre",
       "location": "Kathmandu, Nepal",
-      "dates": "2021 \u2013 2023",
+      "dates": "2021 – 2023",
       "detail": "GPA: 3.91 + 3.73"
     }
   ],
@@ -438,9 +438,8 @@
       "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/U7249YW5QEFY"
     },
     {
-      "title": "Google Advanced Data Analytics",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WJ3BRF35CQMT",
-      "cv": false
+      "title": "Google Advanced Data Analytics Professional Certificate",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WJ3BRF35CQMT"
     },
     {
       "title": "IBM Data Analyst Professional Certificate",
@@ -481,7 +480,7 @@
     {
       "organization": "Data Research Council For Students",
       "role": "Core Member",
-      "dates": "11/2022 \u2013 12/2023",
+      "dates": "11/2022 – 12/2023",
       "bullets": [
         "Mentored **200+ students** in **intermediate Python**, providing guidance and support to help them improve their skills."
       ],
@@ -490,7 +489,7 @@
     {
       "organization": "Together We Learn",
       "role": "Co founder",
-      "dates": "03/2022 \u2013 08/2023",
+      "dates": "03/2022 – 08/2023",
       "bullets": [
         "Co-founded and led an organization of **500+** members",
         "Conducted **5+ webinars** and **10+ newsletters** focused on **data science** and **programming** in general, providing valuable information and updates to **200+ subscribers**."
@@ -500,7 +499,7 @@
     {
       "organization": "Kathmandu Valley Leo Club",
       "role": "Volunteer",
-      "dates": "01/2023 \u2013 07/2025",
+      "dates": "01/2023 – 07/2025",
       "bullets": [
         "Participated in different volunteering activities from KVLC Pulchowk."
       ],
