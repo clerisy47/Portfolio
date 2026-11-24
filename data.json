@@ -80,7 +80,31 @@
       "title": "Research Intern",
       "company": "NAAMII",
       "companyUrl": null,
-      "dates": "04/2025 – 11/2025",
+      "dates": "04/2026 \u2013 11/2026",
+      "description": "Research Intern on **3DPercept**, an open-vocabulary, training-free **agentic harness** that enables multimodal language models to answer questions of varying complexity about **3D indoor scenes**, achieving **state-of-the-art results on 3D scene understanding benchmarks**.",
+      "bullets": [
+        "Designed a **mesh-native multi-agent protocol** for open-vocabulary **3D scene question answering**, with specialized agents for planning, viewpoint rendering, and evidence judgment before sealing answers.",
+        "Built a **cited scene-graph memory system** decoupling compact working memory from long-term view storage and claim\u2013evidence links for multi-hop spatial reasoning.",
+        "Implemented a **training-free teacher\u2013student skill development loop** that iteratively improves agent skills and tool specifications under regression gating without updating model weights.",
+        "Delivered **state-of-the-art performance on 3D scene understanding benchmarks** (**ScanQA, InteriorGS, and ScanNet++**), with models equipped with 3DPercept often outperforming substantially stronger baselines."
+      ]
+    },
+    {
+      "title": "Sectional Lead \u2014 Probability for AI (PAI)",
+      "company": "Stanford Online",
+      "companyUrl": null,
+      "dates": "10/2026 \u2013 11/2026",
+      "description": "Sectional Lead for **Probability for AI (PAI)**, a free Stanford Online course based on **CS109** material, teaching the probability foundations that modern AI is built on.",
+      "bullets": [
+        "Taught and mentored a section of **20 students from 14 nations** through the six-week PAI curriculum.",
+        "Guided weekly labs pairing core probability with applied builds\u2014**inference-time resource decision makers**, **probabilistic artwork**, **MLE-based trackers**, **logistic regression test suites**, **neural network visualizations**, and **probabilistic evaluation** covering fairness and calibration."
+      ]
+    },
+    {
+      "title": "Research Intern",
+      "company": "NAAMII",
+      "companyUrl": null,
+      "dates": "04/2025 \u2013 11/2025",
       "description": "Research Intern working on applied **computer vision** systems in **agricultural and biological monitoring** domains within a physics laboratory setting.",
       "bullets": [
         "Developed **deep learning-based disease detection models for rice crops**, improving classification accuracy to **~93% on curated field datasets** with a **Raspberry Pi-based edge AI application**",
@@ -93,7 +117,7 @@
       "title": "Backend Engineer and Data Scientist",
       "company": "Omdena",
       "companyUrl": "https://omdena.com/",
-      "dates": "11/2023 – 03/2025",
+      "dates": "11/2023 \u2013 03/2025",
       "description": "Collaborated with **global teams** on applied AI projects focused on **environmental monitoring** and **agricultural analytics**.",
       "bullets": [
         {
@@ -129,7 +153,7 @@
   ],
   "projects": [
     {
-      "title": "MEDIWO — LLM-Powered Medical Workflow Optimization",
+      "title": "MEDIWO \u2014 LLM-Powered Medical Workflow Optimization",
       "url": "https://github.com/clerisy47/mediwo",
       "description": "AI-assisted healthcare platform designed to optimize outpatient department (OPD) workflows by automating patient intake, reducing consultation overhead, and generating structured clinical summaries for doctors prior to consultation.",
       "bullets": [
@@ -141,7 +165,7 @@
       ]
     },
     {
-      "title": "Compliance Guide — Intelligent Compliance Analysis System",
+      "title": "Compliance Guide \u2014 Intelligent Compliance Analysis System",
       "url": "https://github.com/clerisy47/Compliance_Gap_Detector_and_Policy_Analyzer",
       "description": "AI-powered compliance intelligence platform built to simplify complex policy documents and automate security framework analysis for faster gap identification and remediation.",
       "bullets": [
@@ -153,7 +177,7 @@
       ]
     },
     {
-      "title": "Volt Vision — Household Energy Demand Forecasting for Nepal",
+      "title": "Volt Vision \u2014 Household Energy Demand Forecasting for Nepal",
       "url": "https://github.com/clerisy47/VoltVision",
       "description": "Machine learning-based forecasting system for predicting household energy demand and electricity pricing trends in Nepal.",
       "bullets": [
@@ -162,20 +186,8 @@
         "Implemented **SARIMAX and ARIMAX models** for multivariate time-series forecasting of household demand and tariff fluctuations.",
         "Built end-to-end **MLOps deployment pipelines** using **ZenML and MLflow**, enabling experiment tracking and reproducible model versioning.",
         "Improved forecasting reliability for seasonal demand spikes with **91% prediction accuracy during peak usage periods**."
-      ]
-    },
-    {
-      "title": "Guardian Shield — AI-Powered Browser Security Extension",
-      "url": "https://github.com/clerisy47/Guardian-Shield",
-      "description": "Browser extension designed to detect phishing attempts, summarize risky content, and improve online user protection against fraud.",
-      "bullets": [
-        "Developed a **Chrome extension** using browser APIs for real-time monitoring and analysis of suspicious email content.",
-        "Fine-tuned **BERT-based classification models** in **PyTorch** for phishing and spam detection, achieving **96.2% classification accuracy**.",
-        "Implemented **Pegasus Transformer-based summarization pipelines** for simplifying complex terms and conditions into concise risk summaries.",
-        "Processed and classified **30,000+ labeled email samples** for robust fraud detection performance.",
-        "Reduced false-positive detection rates by **22%** through threshold optimization and ensemble inference tuning.",
-        "Improved extension response time to **<1.8 seconds per scan**, enabling near real-time protection."
-      ]
+      ],
+      "cv": false
     }
   ],
   "portfolio": [
@@ -259,14 +271,14 @@
       "degree": "Bachelor's in Computer Engineering",
       "school": "Pulchowk Engineering Campus",
       "location": "Kathmandu, Nepal",
-      "dates": "2023 – present",
+      "dates": "2023 \u2013 present",
       "detail": "Average Percentage: 82.4"
     },
     {
       "degree": "High School",
       "school": "Capital College and Research Centre",
       "location": "Kathmandu, Nepal",
-      "dates": "2021 – 2023",
+      "dates": "2021 \u2013 2023",
       "detail": "GPA: 3.91 + 3.73"
     }
   ],
@@ -274,59 +286,139 @@
     {
       "category": "Languages",
       "items": [
-        { "name": "Python", "icon": "img/skills/python.png" },
-        { "name": "C", "icon": "img/skills/C.png" },
-        { "name": "C++", "icon": "img/skills/CPP.png" },
-        { "name": "JavaScript", "icon": "img/skills/JavaScript.png" },
-        { "name": "SQL", "icon": "img/skills/SQL.png" }
+        {
+          "name": "Python",
+          "icon": "img/skills/python.png"
+        },
+        {
+          "name": "C",
+          "icon": "img/skills/C.png"
+        },
+        {
+          "name": "C++",
+          "icon": "img/skills/CPP.png"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "img/skills/JavaScript.png"
+        },
+        {
+          "name": "SQL",
+          "icon": "img/skills/SQL.png"
+        }
       ]
     },
     {
       "category": "Data Analysis",
       "items": [
-        { "name": "NumPy", "icon": "img/skills/NumPy.png" },
-        { "name": "Pandas", "icon": "img/skills/pandas.png" },
-        { "name": "SciPy", "icon": "img/skills/scipy.png" },
-        { "name": "Regex", "icon": "img/skills/regex.png" },
-        { "name": "Tableau", "icon": "img/skills/tableau.png" }
+        {
+          "name": "NumPy",
+          "icon": "img/skills/NumPy.png"
+        },
+        {
+          "name": "Pandas",
+          "icon": "img/skills/pandas.png"
+        },
+        {
+          "name": "SciPy",
+          "icon": "img/skills/scipy.png"
+        },
+        {
+          "name": "Regex",
+          "icon": "img/skills/regex.png"
+        },
+        {
+          "name": "Tableau",
+          "icon": "img/skills/tableau.png"
+        }
       ]
     },
     {
       "category": "AI Systems",
       "items": [
-        { "name": "Scikit Learn", "icon": "img/skills/sklearn.png" },
-        { "name": "TensorFlow", "icon": "img/skills/tensorflow.png" },
-        { "name": "Pytorch", "icon": "img/skills/pytorch.png" },
-        { "name": "LangChain", "icon": "img/skills/langchain.png" },
-        { "name": "LangGraph", "icon": "img/skills/langgraph.png" },
-        { "name": "RAG", "icon": "img/skills/rag.png" },
-        { "name": "Prompt Engineering", "icon": "img/skills/prompt-engineering.png" }
+        {
+          "name": "Scikit Learn",
+          "icon": "img/skills/sklearn.png"
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "img/skills/tensorflow.png"
+        },
+        {
+          "name": "Pytorch",
+          "icon": "img/skills/pytorch.png"
+        },
+        {
+          "name": "LangChain",
+          "icon": "img/skills/langchain.png"
+        },
+        {
+          "name": "LangGraph",
+          "icon": "img/skills/langgraph.png"
+        },
+        {
+          "name": "RAG",
+          "icon": "img/skills/rag.png"
+        },
+        {
+          "name": "Prompt Engineering",
+          "icon": "img/skills/prompt-engineering.png"
+        }
       ]
     },
     {
       "category": "Backend & Deployment",
       "items": [
-        { "name": "FastAPI", "icon": "img/skills/fastapi.png" },
-        { "name": "Flask", "icon": "img/skills/flask.png" },
-        { "name": "Docker", "icon": "img/skills/docker.png" },
-        { "name": "AWS", "icon": "img/skills/AWS.png" },
-        { "name": "Linux", "icon": "img/skills/Linux.png" },
-        { "name": "MLflow", "icon": "img/skills/mlflow.png" }
+        {
+          "name": "FastAPI",
+          "icon": "img/skills/fastapi.png"
+        },
+        {
+          "name": "Flask",
+          "icon": "img/skills/flask.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "img/skills/docker.png"
+        },
+        {
+          "name": "AWS",
+          "icon": "img/skills/AWS.png"
+        },
+        {
+          "name": "Linux",
+          "icon": "img/skills/Linux.png"
+        },
+        {
+          "name": "MLflow",
+          "icon": "img/skills/mlflow.png"
+        }
       ]
     },
     {
       "category": "Mathematics",
       "items": [
-        { "name": "Linear Algebra", "icon": "img/skills/linear-algebra.png" },
-        { "name": "Probability & Statistics", "icon": "img/skills/probability-statistics.png" },
-        { "name": "Numeical Optimisation with Calculus", "icon": "img/skills/calculus.png", "displayName": "Numerical Optimisation using calculus" }
+        {
+          "name": "Linear Algebra",
+          "icon": "img/skills/linear-algebra.png"
+        },
+        {
+          "name": "Probability & Statistics",
+          "icon": "img/skills/probability-statistics.png"
+        },
+        {
+          "name": "Numeical Optimisation with Calculus",
+          "icon": "img/skills/calculus.png",
+          "displayName": "Numerical Optimisation using calculus"
+        }
       ]
     }
   ],
   "awards": [
     {
       "title": "National IT Olympiad Silver Medalist",
-      "url": null
+      "url": null,
+      "cv": false
     },
     {
       "title": "IEEE Xtreme Global 68th Local 1st out of 20K + participants",
@@ -334,7 +426,8 @@
     },
     {
       "title": "Runner UP:- Nepal Hacks by NAAMi and SecurityPal",
-      "url": "https://www.linkedin.com/posts/nitesh-baniya_there-were-some-who-won-and-some-who-didn-activity-7324824908151013377-QMUp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24a6YBauQrbw9kMyE_8TW0_8698U7t5b4"
+      "url": "https://www.linkedin.com/posts/nitesh-baniya_there-were-some-who-won-and-some-who-didn-activity-7324824908151013377-QMUp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24a6YBauQrbw9kMyE_8TW0_8698U7t5b4",
+      "cv": false
     },
     {
       "title": "AWS Solutions Architect Associate",
@@ -346,23 +439,28 @@
     },
     {
       "title": "Google Advanced Data Analytics",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WJ3BRF35CQMT"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WJ3BRF35CQMT",
+      "cv": false
     },
     {
       "title": "IBM Data Analyst Professional Certificate",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/EXF3PNPZR53J"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/EXF3PNPZR53J",
+      "cv": false
     },
     {
       "title": "Stanford Machine Learning Specialization",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/7WCV7WC5YFY7"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/7WCV7WC5YFY7",
+      "cv": false
     },
     {
       "title": "Deep Learning.AI Deep Learning Specialization",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/PWJK2MCV4SJ8"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/PWJK2MCV4SJ8",
+      "cv": false
     },
     {
       "title": "Deeplearning.AI Mathematics for Data Science",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/TTAA8KEXU7FP"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/TTAA8KEXU7FP",
+      "cv": false
     },
     {
       "title": "Tensorflow Developer Professional Certificate",
@@ -370,38 +468,43 @@
     },
     {
       "title": "Meta Frontend Professional Certificate",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/AT9KN2EECVQL"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/AT9KN2EECVQL",
+      "cv": false
     },
     {
       "title": "Meta Backend Professional Certificate",
-      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/VYQ79VKZ4DFX"
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/VYQ79VKZ4DFX",
+      "cv": false
     }
   ],
   "leadership": [
     {
       "organization": "Data Research Council For Students",
       "role": "Core Member",
-      "dates": "11/2022 – 12/2023",
+      "dates": "11/2022 \u2013 12/2023",
       "bullets": [
         "Mentored **200+ students** in **intermediate Python**, providing guidance and support to help them improve their skills."
-      ]
+      ],
+      "cv": false
     },
     {
       "organization": "Together We Learn",
       "role": "Co founder",
-      "dates": "03/2022 – 08/2023",
+      "dates": "03/2022 \u2013 08/2023",
       "bullets": [
         "Co-founded and led an organization of **500+** members",
         "Conducted **5+ webinars** and **10+ newsletters** focused on **data science** and **programming** in general, providing valuable information and updates to **200+ subscribers**."
-      ]
+      ],
+      "cv": false
     },
     {
       "organization": "Kathmandu Valley Leo Club",
       "role": "Volunteer",
-      "dates": "01/2023 – 07/2025",
+      "dates": "01/2023 \u2013 07/2025",
       "bullets": [
         "Participated in different volunteering activities from KVLC Pulchowk."
-      ]
+      ],
+      "cv": false
     }
   ]
 }

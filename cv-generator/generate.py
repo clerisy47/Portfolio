@@ -136,6 +136,9 @@ def build_html(data: dict) -> str:
             """
         )
 
+    def include_on_cv(item: dict) -> bool:
+        return item.get("cv", True) is not False
+
     project_parts = [
         f"""
         <article class="entry">
@@ -145,6 +148,7 @@ def build_html(data: dict) -> str:
         </article>
         """
         for proj in data["projects"]
+        if include_on_cv(proj)
     ]
 
     edu_parts = [
@@ -177,10 +181,10 @@ def build_html(data: dict) -> str:
             f"<li><strong>{html.escape(skill['category'])}</strong> — {html.escape(names)}</li>"
         )
 
-    awards = data["awards"]
-    col1 = [awards[0], awards[3], awards[6], awards[9], awards[12]]
-    col2 = [awards[1], awards[4], awards[7], awards[10]]
-    col3 = [awards[2], awards[5], awards[8], awards[11]]
+    awards = [a for a in data["awards"] if include_on_cv(a)]
+    cols = [[], [], []]
+    for i, award in enumerate(awards):
+        cols[i % 3].append(award)
 
     def award_cell(award: dict) -> str:
         title = html.escape(award["title"])
@@ -192,10 +196,11 @@ def build_html(data: dict) -> str:
         return f'<div class="award">{title}</div>'
 
     award_cells = []
-    for i in range(max(len(col1), len(col2), len(col3))):
-        for col in (col1, col2, col3):
+    for i in range(max((len(c) for c in cols), default=0)):
+        for col in cols:
             award_cells.append(award_cell(col[i]) if i < len(col) else '<div class="award"></div>')
 
+    lead_items = [item for item in (data.get("leadership") or []) if include_on_cv(item)]
     lead_parts = [
         f"""
         <article class="entry keep">
@@ -207,8 +212,18 @@ def build_html(data: dict) -> str:
           {bullets_html(item["bullets"])}
         </article>
         """
-        for item in data["leadership"]
+        for item in lead_items
     ]
+    leadership_section = (
+        f"""
+    <section class="section">
+      <h2 class="section-title">Leadership &amp; Extracurriculars</h2>
+      {"".join(lead_parts)}
+    </section>
+"""
+        if lead_items
+        else ""
+    )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -250,11 +265,7 @@ def build_html(data: dict) -> str:
       <h2 class="section-title">Awards and Certifications</h2>
       <div class="awards">{"".join(award_cells)}</div>
     </section>
-
-    <section class="section">
-      <h2 class="section-title">Leadership &amp; Extracurriculars</h2>
-      {"".join(lead_parts)}
-    </section>
+    {leadership_section}
   </main>
 </body>
 </html>

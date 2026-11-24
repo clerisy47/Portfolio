@@ -119,11 +119,6 @@ svg.icon {
   margin-top: 2.2mm;
 }
 
-.section-awards {
-  break-before: page;
-  page-break-before: always;
-}
-
 .section-title {
   color: var(--accent);
   font-size: 13.5pt;
