@@ -1,0 +1,407 @@
+{
+  "name": "Utsav Acharya",
+  "username": "clerisy47",
+  "role": "AI Engineer",
+  "profileImage": "img/pfp.png",
+  "cvFile": "CV.pdf",
+  "location": "Koteshwor, Kathmandu",
+  "spokenLanguages": "Nepali, English, Hindi",
+  "educationShort": "IOE Pulchowk Campus",
+  "contact": [
+    {
+      "type": "email",
+      "label": "clerisy47@gmail.com",
+      "url": "mailto:clerisy47@gmail.com"
+    },
+    {
+      "type": "phone",
+      "label": "+9779860307243",
+      "url": "tel:+9779860307243"
+    },
+    {
+      "type": "portfolio",
+      "label": "Portfolio",
+      "url": "https://utsav47.com.np/"
+    },
+    {
+      "type": "linkedin",
+      "label": "Linkedin",
+      "url": "https://www.linkedin.com/in/clerisy47/"
+    },
+    {
+      "type": "github",
+      "label": "Github",
+      "url": "https://github.com/clerisy47"
+    }
+  ],
+  "social": [
+    {
+      "type": "github",
+      "url": "https://www.github.com/clerisy47",
+      "icon": "fab fa-github"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://www.linkedin.com/in/clerisy47",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "type": "facebook",
+      "url": "https://www.facebook.com/clerisy47",
+      "icon": "fab fa-facebook"
+    },
+    {
+      "type": "twitter",
+      "url": "https://www.twitter.com/clerisy47",
+      "icon": "fab fa-twitter"
+    }
+  ],
+  "summary": "A **Computer Engineering** student with experience in **Machine learning, Backend systems, Applied AI research** and **Competitive Programming.** Built and deployed data-driven solutions across **computer vision,** **LLM systems,** and **forecasting through** research collaborations **and** real-world projects.",
+  "stats": [
+    {
+      "value": "15+",
+      "label": "Projects Completed"
+    },
+    {
+      "value": "3+",
+      "label": "Years of experience"
+    },
+    {
+      "value": "500+",
+      "label": "Community Members Led"
+    },
+    {
+      "value": "200+",
+      "label": "Students Mentored"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Research Intern",
+      "company": "NAAMII",
+      "companyUrl": null,
+      "dates": "04/2025 – 11/2025",
+      "description": "Research Intern working on applied **computer vision** systems in **agricultural and biological monitoring** domains within a physics laboratory setting.",
+      "bullets": [
+        "Developed **deep learning-based disease detection models for rice crops**, improving classification accuracy to **~93% on curated field datasets** with a **Raspberry Pi-based edge AI application**",
+        "Designed and trained **computer vision pipelines for poultry behavioral monitoring**, enabling automated detection of abnormal movement patterns with **real-time inference capability**.",
+        "Processed and annotated **10,000+ agricultural and livestock image samples** for supervised model training.",
+        "Experimented with **CNN-based architectures (ResNet, EfficientNet variants)** for improved robustness under low-quality field imagery conditions."
+      ]
+    },
+    {
+      "title": "Backend Engineer and Data Scientist",
+      "company": "Omdena",
+      "companyUrl": "https://omdena.com/",
+      "dates": "11/2023 – 03/2025",
+      "description": "Collaborated with **global teams** on applied AI projects focused on **environmental monitoring** and **agricultural analytics**.",
+      "bullets": [
+        {
+          "text": "Built ML pipelines for **Combatting Illegal Deforestation in Romania** achieving **~88% segmentation accuracy in prototype models**.",
+          "links": [
+            {
+              "label": "Combatting Illegal Deforestation in Romania",
+              "url": "https://drive.google.com/file/d/1-3Twy8ndTlkblVPyy2-TM0YPGHP_Dvdx/view?usp=drive_link"
+            }
+          ]
+        },
+        {
+          "text": "Contributed to geospatial analysis workflows for **Mapping Seagras Meadows** using remote sensing data and satellite imagery classification techniques.",
+          "links": [
+            {
+              "label": "Mapping Seagras Meadows",
+              "url": "https://dagshub.com/Omdena/TriesteItalyChapter_MappingSeagrassMeadows"
+            }
+          ]
+        },
+        {
+          "text": "Improved dataset preprocessing efficiency by **~40%** through optimized ETL pipelines and automation scripts for **Agriculture Analysis on Kenya**.",
+          "links": [
+            {
+              "label": "Agriculture Analysis on Kenya",
+              "url": "https://drive.google.com/file/d/1Zxg1G-t8xN98CiIagPfV9yh1nCWeYj-k/view?usp=drive_link"
+            }
+          ]
+        },
+        "Worked in cross-functional teams of **50+ contributors**, coordinating model development, data preprocessing, and evaluation workflows."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "MEDIWO — LLM-Powered Medical Workflow Optimization",
+      "url": "https://github.com/clerisy47/mediwo",
+      "description": "AI-assisted healthcare platform designed to optimize outpatient department (OPD) workflows by automating patient intake, reducing consultation overhead, and generating structured clinical summaries for doctors prior to consultation.",
+      "bullets": [
+        "Engineered a full-stack platform using **React, TypeScript, Tailwind CSS, FastAPI, and MongoDB**, supporting separate patient and doctor dashboards for streamlined clinical interaction.",
+        "Developed an adaptive **AI-driven intake chatbot** that collected and structured patient symptoms, reducing manual intake time by **~65%**.",
+        "Built a **RAG-based clinical summarization pipeline** using **Llama, LangGraph, and Chroma**, achieving **92% summary relevance accuracy** during internal evaluation.",
+        "Integrated an **OCR-based medical report digitization module**, enabling automated extraction from **500+ uploaded diagnostic documents**.",
+        "Designed a **human-in-the-loop feedback framework** that logged physician corrections as reward signals, improving summary precision by **18% across iterative retraining cycles**."
+      ]
+    },
+    {
+      "title": "Compliance Guide — Intelligent Compliance Analysis System",
+      "url": "https://github.com/clerisy47/Compliance_Gap_Detector_and_Policy_Analyzer",
+      "description": "AI-powered compliance intelligence platform built to simplify complex policy documents and automate security framework analysis for faster gap identification and remediation.",
+      "bullets": [
+        "Built a **document intelligence pipeline** using **locally hosted Llama models** for automated policy summarization and contextual compliance interpretation.",
+        "Integrated a **RAG-based retrieval system** that improved compliance recommendation accuracy from **76% to 95%**.",
+        "Developed a **comparative evaluation framework** using dual LLM inference pipelines to benchmark response consistency across compliance scenarios.",
+        "Processed and indexed **1,200+ compliance documents** across security standards including ISO 27001 and SOC 2.",
+        "Reduced average compliance analysis time from **4 hours to under 20 minutes per document set**."
+      ]
+    },
+    {
+      "title": "Volt Vision — Household Energy Demand Forecasting for Nepal",
+      "url": "https://github.com/clerisy47/VoltVision",
+      "description": "Machine learning-based forecasting system for predicting household energy demand and electricity pricing trends in Nepal.",
+      "bullets": [
+        "Processed and analyzed **30,000+ household energy consumption records** using **Pandas and NumPy** for large-scale demand pattern analysis.",
+        "Trained and optimized **XGBoost forecasting models**, achieving **14% lower MAE** than baseline regression approaches.",
+        "Implemented **SARIMAX and ARIMAX models** for multivariate time-series forecasting of household demand and tariff fluctuations.",
+        "Built end-to-end **MLOps deployment pipelines** using **ZenML and MLflow**, enabling experiment tracking and reproducible model versioning.",
+        "Improved forecasting reliability for seasonal demand spikes with **91% prediction accuracy during peak usage periods**."
+      ]
+    },
+    {
+      "title": "Guardian Shield — AI-Powered Browser Security Extension",
+      "url": "https://github.com/clerisy47/Guardian-Shield",
+      "description": "Browser extension designed to detect phishing attempts, summarize risky content, and improve online user protection against fraud.",
+      "bullets": [
+        "Developed a **Chrome extension** using browser APIs for real-time monitoring and analysis of suspicious email content.",
+        "Fine-tuned **BERT-based classification models** in **PyTorch** for phishing and spam detection, achieving **96.2% classification accuracy**.",
+        "Implemented **Pegasus Transformer-based summarization pipelines** for simplifying complex terms and conditions into concise risk summaries.",
+        "Processed and classified **30,000+ labeled email samples** for robust fraud detection performance.",
+        "Reduced false-positive detection rates by **22%** through threshold optimization and ensemble inference tuning.",
+        "Improved extension response time to **<1.8 seconds per scan**, enabling near real-time protection."
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "title": "Mediwo",
+      "description": "Medical workflow and health management",
+      "image": "img/projects/mediwo.png",
+      "url": "https://github.com/clerisy47/Mediwo"
+    },
+    {
+      "title": "VoltVision",
+      "description": "Energy forecasting and power consumption analytics",
+      "image": "img/projects/VoltVision.png",
+      "url": "https://github.com/clerisy47/VoltVision"
+    },
+    {
+      "title": "RL on LLMs",
+      "description": "Reinforcement Learning applied to Large Language Models",
+      "image": "img/projects/RL-on-LLMs.png",
+      "url": "https://github.com/clerisy47/RL-on-LLMs"
+    },
+    {
+      "title": "LeafGuard",
+      "description": "Plant disease detection using computer vision",
+      "image": "img/projects/leafguard.png",
+      "url": "https://github.com/clerisy47/LeafGuard"
+    },
+    {
+      "title": "UrbanOasis",
+      "description": "Urban sustainability and green space management",
+      "image": "img/projects/urbanoasis.png",
+      "url": "https://github.com/clerisy47/UrbanOasis"
+    },
+    {
+      "title": "Celestial Odyssey",
+      "description": "Space exploration and simulation",
+      "image": "img/projects/celestial-odyssey.png",
+      "url": "https://github.com/clerisy47/Celestial-Odyssey"
+    },
+    {
+      "title": "Guardian Shield",
+      "description": "Security and threat detection system",
+      "image": "img/projects/guardian-shield.png",
+      "url": "https://github.com/clerisy47/Guardian-Shield"
+    },
+    {
+      "title": "Sylva",
+      "description": "Generating trees in ThreeJS using fractals",
+      "image": "img/projects/sylva.png",
+      "url": "https://github.com/clerisy47/Sylva"
+    },
+    {
+      "title": "BiteSmart",
+      "description": "Nutrition tracking and smart diet recommendation",
+      "image": "img/projects/bitesmart.png",
+      "url": "https://github.com/clerisy47/BiteSmart"
+    },
+    {
+      "title": "Galactic Defenders",
+      "description": "Space-themed game with AI enemies",
+      "image": "img/projects/galactic-defenders.png",
+      "url": "https://github.com/clerisy47/Galactic-Defenders"
+    },
+    {
+      "title": "ANN in C",
+      "description": "Artificial Neural Networks implementation in C",
+      "image": "img/projects/ANN-in-C.png",
+      "url": "https://github.com/clerisy47/ANN-in-C"
+    },
+    {
+      "title": "Flappy AI",
+      "description": "AI-powered Flappy Bird game with neural networks",
+      "image": "img/projects/flappy-ai.png",
+      "url": "https://github.com/clerisy47/Flappy-AI"
+    }
+  ],
+  "portfolioIntro": "Academic and professional projects that demonstrate my expertise in AI, Backend Development, and Data Science.",
+  "contactBlurb": "Please consider contacting me through the Linkedin or Gmail mentioned below.",
+  "education": [
+    {
+      "degree": "Bachelor's in Computer Engineering",
+      "school": "Pulchowk Engineering Campus",
+      "location": "Kathmandu, Nepal",
+      "dates": "2023 – present",
+      "detail": "Average Percentage: 82.4"
+    },
+    {
+      "degree": "High School",
+      "school": "Capital College and Research Centre",
+      "location": "Kathmandu, Nepal",
+      "dates": "2021 – 2023",
+      "detail": "GPA: 3.91 + 3.73"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": [
+        { "name": "Python", "icon": "img/skills/python.png" },
+        { "name": "C", "icon": "img/skills/C.png" },
+        { "name": "C++", "icon": "img/skills/CPP.png" },
+        { "name": "JavaScript", "icon": "img/skills/JavaScript.png" },
+        { "name": "SQL", "icon": "img/skills/SQL.png" }
+      ]
+    },
+    {
+      "category": "Data Analysis",
+      "items": [
+        { "name": "NumPy", "icon": "img/skills/NumPy.png" },
+        { "name": "Pandas", "icon": "img/skills/pandas.png" },
+        { "name": "SciPy", "icon": "img/skills/scipy.png" },
+        { "name": "Regex", "icon": "img/skills/regex.png" },
+        { "name": "Tableau", "icon": "img/skills/tableau.png" }
+      ]
+    },
+    {
+      "category": "AI Systems",
+      "items": [
+        { "name": "Scikit Learn", "icon": "img/skills/sklearn.png" },
+        { "name": "TensorFlow", "icon": "img/skills/tensorflow.png" },
+        { "name": "Pytorch", "icon": "img/skills/pytorch.png" },
+        { "name": "LangChain", "icon": "img/skills/langchain.png" },
+        { "name": "LangGraph", "icon": "img/skills/langgraph.png" },
+        { "name": "RAG", "icon": "img/skills/rag.png" },
+        { "name": "Prompt Engineering", "icon": "img/skills/prompt-engineering.png" }
+      ]
+    },
+    {
+      "category": "Backend & Deployment",
+      "items": [
+        { "name": "FastAPI", "icon": "img/skills/fastapi.png" },
+        { "name": "Flask", "icon": "img/skills/flask.png" },
+        { "name": "Docker", "icon": "img/skills/docker.png" },
+        { "name": "AWS", "icon": "img/skills/AWS.png" },
+        { "name": "Linux", "icon": "img/skills/Linux.png" },
+        { "name": "MLflow", "icon": "img/skills/mlflow.png" }
+      ]
+    },
+    {
+      "category": "Mathematics",
+      "items": [
+        { "name": "Linear Algebra", "icon": "img/skills/linear-algebra.png" },
+        { "name": "Probability & Statistics", "icon": "img/skills/probability-statistics.png" },
+        { "name": "Numeical Optimisation with Calculus", "icon": "img/skills/calculus.png", "displayName": "Numerical Optimisation using calculus" }
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "National IT Olympiad Silver Medalist",
+      "url": null
+    },
+    {
+      "title": "IEEE Xtreme Global 68th Local 1st out of 20K + participants",
+      "url": "https://www.linkedin.com/posts/clerisy47_ieeextreme19-competitiveprogramming-ugcPost-7389172758699646976-aDuK/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24a6YBauQrbw9kMyE_8TW0_8698U7t5b4"
+    },
+    {
+      "title": "Runner UP:- Nepal Hacks by NAAMi and SecurityPal",
+      "url": "https://www.linkedin.com/posts/nitesh-baniya_there-were-some-who-won-and-some-who-didn-activity-7324824908151013377-QMUp?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC24a6YBauQrbw9kMyE_8TW0_8698U7t5b4"
+    },
+    {
+      "title": "AWS Solutions Architect Associate",
+      "url": "https://drive.google.com/file/d/1kAVw7omFaBA3XLmIJ-gFXK40n5D9WauL/view?usp=drive_link"
+    },
+    {
+      "title": "IBM Data Science Professional Certificate",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/U7249YW5QEFY"
+    },
+    {
+      "title": "Google Advanced Data Analytics",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/WJ3BRF35CQMT"
+    },
+    {
+      "title": "IBM Data Analyst Professional Certificate",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/EXF3PNPZR53J"
+    },
+    {
+      "title": "Stanford Machine Learning Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/7WCV7WC5YFY7"
+    },
+    {
+      "title": "Deep Learning.AI Deep Learning Specialization",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/PWJK2MCV4SJ8"
+    },
+    {
+      "title": "Deeplearning.AI Mathematics for Data Science",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/TTAA8KEXU7FP"
+    },
+    {
+      "title": "Tensorflow Developer Professional Certificate",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/3HYF3KYLGCC4"
+    },
+    {
+      "title": "Meta Frontend Professional Certificate",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/AT9KN2EECVQL"
+    },
+    {
+      "title": "Meta Backend Professional Certificate",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/certificate/VYQ79VKZ4DFX"
+    }
+  ],
+  "leadership": [
+    {
+      "organization": "Data Research Council For Students",
+      "role": "Core Member",
+      "dates": "11/2022 – 12/2023",
+      "bullets": [
+        "Mentored **200+ students** in **intermediate Python**, providing guidance and support to help them improve their skills."
+      ]
+    },
+    {
+      "organization": "Together We Learn",
+      "role": "Co founder",
+      "dates": "03/2022 – 08/2023",
+      "bullets": [
+        "Co-founded and led an organization of **500+** members",
+        "Conducted **5+ webinars** and **10+ newsletters** focused on **data science** and **programming** in general, providing valuable information and updates to **200+ subscribers**."
+      ]
+    },
+    {
+      "organization": "Kathmandu Valley Leo Club",
+      "role": "Volunteer",
+      "dates": "01/2023 – 07/2025",
+      "bullets": [
+        "Participated in different volunteering activities from KVLC Pulchowk."
+      ]
+    }
+  ]
+}

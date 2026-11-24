@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "Amiri";
+  src: url("fonts/Amiri-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("fonts/Amiri-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Amiri";
+  src: url("fonts/Amiri-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --accent: #348aa7;
+  --text: #000000;
+  --body-size: 10.5pt;
+  --line: 1.145;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: #fff;
+  color: var(--text);
+  font-family: "Amiri", "Times New Roman", serif;
+  font-size: var(--body-size);
+  line-height: var(--line);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@page {
+  size: A4;
+  margin: 10mm 22mm 14mm 22mm;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+svg.ext,
+svg.icon {
+  width: 9px;
+  height: 9px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.cv {
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5mm;
+}
+
+.name {
+  color: var(--accent);
+  font-size: 21.5pt;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0 11px;
+  margin-top: 1px;
+}
+
+.contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.contact-item svg.icon {
+  width: 11px;
+  height: 11px;
+}
+
+.summary {
+  margin: 1.8mm 0 3.2mm;
+  text-align: left;
+}
+
+.section {
+  margin-top: 2.2mm;
+}
+
+.section-awards {
+  break-before: page;
+  page-break-before: always;
+}
+
+.section-title {
+  color: var(--accent);
+  font-size: 13.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 0.7pt solid var(--accent);
+  padding-bottom: 0.2mm;
+  margin-bottom: 1.2mm;
+  line-height: 1.15;
+}
+
+.entry {
+  margin-bottom: 2.4mm;
+}
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.entry-title {
+  font-weight: 700;
+}
+
+.entry-dates {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.entry-sub {
+  font-style: italic;
+}
+
+.entry-sub svg.ext {
+  margin-left: 2px;
+  position: relative;
+  top: -1px;
+}
+
+.entry-desc {
+  margin-top: 0;
+  padding-left: 8px;
+}
+
+.bullets {
+  list-style: none;
+  margin-top: 0.4mm;
+  padding-left: 0;
+}
+
+.bullets li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 0.15mm;
+}
+
+.bullets li::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 5px;
+  width: 4.2px;
+  height: 4.2px;
+  border-radius: 50%;
+  background: #111;
+}
+
+.title-link {
+  display: inline;
+  font-weight: 700;
+}
+
+.title-link svg.ext {
+  margin-left: 2px;
+  position: relative;
+  top: -1px;
+}
+
+.inline-link {
+  font-weight: 700;
+}
+
+.inline-link svg.ext {
+  margin-left: 1px;
+  position: relative;
+  top: -1px;
+}
+
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.edu-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  font-style: italic;
+}
+
+.edu-detail {
+  padding-left: 8px;
+  margin-top: 0;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  margin-bottom: 0;
+}
+
+.awards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 14px;
+  row-gap: 5px;
+  margin-top: 1mm;
+  align-items: start;
+}
+
+.award {
+  display: block;
+  line-height: 1.15;
+}
+
+.award svg.ext {
+  margin-left: 2px;
+  position: relative;
+  top: -1px;
+}
+
+.keep {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}

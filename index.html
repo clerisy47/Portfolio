@@ -18,7 +18,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <span>clerisy47</span>
+                <span data-bind="username">clerisy47</span>
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link active-nav">Home</a></li>
@@ -33,18 +33,12 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Utsav Acharya</span>
+                    Hi, I'm <span class="highlight" data-bind="name">Utsav Acharya</span>
                 </h1>
-                <p class="hero-subtitle">
-                    AI Engineer
-                </p>
-                <p class="hero-description">
-                A Computer Engineering student with experience in Machine learning, Backend systems, Applied AI
-                research, and and Competitive Programming. Built and deployed data-driven solutions across computer vision, LLM systems, and forecasting
-                through research collaborations and real-world projects.                
-                </p>
+                <p class="hero-subtitle" data-bind="role">AI Engineer</p>
+                <p class="hero-description" data-bind-html="summary"></p>
                 <div class="hero-buttons">
-                    <a href="CV.pdf" class="main-btn">
+                    <a href="CV.pdf" class="main-btn" data-bind-href="cvFile">
                         <span class="btn-text">Download CV</span>
                         <span class="btn-icon"><i class="fas fa-download"></i></span>
                     </a>
@@ -55,7 +49,7 @@
             </div>
             <div class="hero-image">
                 <div class="image-wrapper">
-                    <img src="img/pfp.png" alt="Utsav Acharya">
+                    <img src="img/pfp.png" alt="Utsav Acharya" data-bind-src="profileImage" data-bind-alt="name">
                 </div>
             </div>
         </div>
@@ -67,418 +61,26 @@
                 <h2>About <span>me</span></h2>
             </div>
             <div class="about-container">
-                <div class="right-about">
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">15+</p>
-                            <p class="small-text">Projects <br /> Completed</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">3+</p>
-                            <p class="small-text">Years of <br /> experience</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">500+</p>
-                            <p class="small-text">Community <br /> Members Led</p>
-                        </div>
-                    </div>
-                    <div class="about-item">
-                        <div class="abt-text">
-                            <p class="large-text">200+</p>
-                            <p class="small-text">Students <br /> Mentored</p>
-                        </div>
-                    </div>
-                </div>
+                <div class="right-about" data-bind-list="stats"></div>
             </div>
             <div class="about-stats">
                 <h4 class="stat-title">My <span>Skills</span></h4>
-
-                <!-- Languages Category -->
-                <div class="skills-category">
-                    <h5 class="category-title">Languages</h5>
-                    <div class="skills-cards">
-                        <div class="skill-card">
-                            <img src="img/skills/python.png" alt="Python">
-                            <p>Python</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/c.png" alt="C">
-                            <p>C</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/cpp.png" alt="C++">
-                            <p>C++</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/javascript.png" alt="JavaScript">
-                            <p>JavaScript</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/sql.png" alt="SQL">
-                            <p>SQL</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Analysis Category -->
-                <div class="skills-category">
-                    <h5 class="category-title">Data Analysis</h5>
-                    <div class="skills-cards">
-                        <div class="skill-card">
-                            <img src="img/skills/numpy.png" alt="NumPy">
-                            <p>NumPy</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/pandas.png" alt="Pandas">
-                            <p>Pandas</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/scipy.png" alt="SciPy">
-                            <p>SciPy</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/regex.png" alt="Regex">
-                            <p>Regex</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/tableau.png" alt="Tableau">
-                            <p>Tableau</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AI Systems Category -->
-                <div class="skills-category">
-                    <h5 class="category-title">AI Systems</h5>
-                    <div class="skills-cards">
-                        <div class="skill-card">
-                            <img src="img/skills/sklearn.png" alt="Scikit Learn">
-                            <p>Scikit Learn</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/tensorflow.png" alt="TensorFlow">
-                            <p>TensorFlow</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/pytorch.png" alt="PyTorch">
-                            <p>PyTorch</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/langchain.png" alt="LangChain">
-                            <p>LangChain</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/langgraph.png" alt="LangGraph">
-                            <p>LangGraph</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/rag.png" alt="RAG">
-                            <p>RAG</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/prompt-engineering.png" alt="Prompt Engineering">
-                            <p>Prompt Engineering</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend & Deployment Category -->
-                <div class="skills-category">
-                    <h5 class="category-title">Backend & Deployment</h5>
-                    <div class="skills-cards">
-                        <div class="skill-card">
-                            <img src="img/skills/fastapi.png" alt="FastAPI">
-                            <p>FastAPI</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/flask.png" alt="Flask">
-                            <p>Flask</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/docker.png" alt="Docker">
-                            <p>Docker</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/aws.png" alt="AWS">
-                            <p>AWS</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/linux.png" alt="Linux">
-                            <p>Linux</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/mlflow.png" alt="MLflow">
-                            <p>MLflow</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mathematics Category -->
-                <div class="skills-category">
-                    <h5 class="category-title">Mathematics</h5>
-                    <div class="skills-cards">
-                        <div class="skill-card">
-                            <img src="img/skills/linear-algebra.png" alt="Linear Algebra">
-                            <p>Linear Algebra</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/probability-statistics.png" alt="Probability & Statistics">
-                            <p>Probability & Statistics</p>
-                        </div>
-                        <div class="skill-card">
-                            <img src="img/skills/calculus.png" alt="Calculus">
-                            <p>Numerical Optimisation using calculus</p>
-                        </div>
-                    </div>
-                </div>
+                <div data-bind-list="skills"></div>
             </div>
             <h4 class="stat-title">Working <span>Experience</span></h4>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">Apr 2025 - Nov 2025</p>
-                                <h5>Research Intern<span> <br> NAAMII</span></h5>
-                                <p>
-                                    Research trainee working on applied <strong>computer vision</strong> systems in <strong>agricultural and biological monitoring</strong> domains within a physics laboratory setting.
-                                    <br><br>
-                                    • Developed <strong>deep learning-based disease detection models for rice crops</strong>, improving classification accuracy to <strong>~93% on curated field datasets</strong>.
-                                    <br><br>
-                                    • Designed and trained <strong>computer vision pipelines for poultry behavioral monitoring</strong>, enabling automated detection of abnormal movement patterns with <strong>real-time inference capability</strong>.
-                                    <br><br>
-                                    • Processed and annotated <strong>10,000+ agricultural and livestock image samples</strong> for supervised model training.
-                                    <br><br>
-                                    • Experimented with <strong>CNN-based architectures (ResNet, EfficientNet variants)</strong> for improved robustness under low-quality field imagery conditions.
-                                </p>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">Nov 2023 - Mar 2025</p>
-                                <h5>Backend Engineer and Data Scientist<span> <br> Omdena</span></h5>
-                                <p>
-                                    Collaborated with <strong>global teams</strong> on applied AI projects focused on <strong>environmental monitoring</strong> and <strong>agricultural analytics</strong>.
-                                    <br><br>
-                                    • Built ML pipelines for <strong>Combatting Illegal Deforestation in Romania</strong> achieving <strong>~88% segmentation accuracy in prototype models</strong>.
-                                    <br><br>
-                                    • Contributed to geospatial analysis workflows for <strong>Mapping Seagrass Meadows</strong> <strong>using remote sensing data and satellite imagery classification techniques</strong>.
-                                    <br><br>
-                                    • Improved dataset preprocessing efficiency by <strong>~40%</strong> through optimized ETL pipelines and automation scripts for <strong>Agriculture Analysis on Kenya</strong>.
-                                    <br><br>
-                                    • Worked in cross-functional teams of <strong>50+ contributors</strong>, coordinating model development, data preprocessing, and evaluation workflows.
-                                </p>
-                            </div>
-                        </div>
-                        <h4 class="stat-title">Educational <span>Experience</span></h4>
-                        <div class="timeline">
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">2023 - present</p>
-                                <h5>Bachelor's in Computer Engineering<span> <br> Pulchowk Engineering Campus</span></h5>
-                                <p>
-                                    Kathmandu, Nepal <br><br>
-                                    Average Percentage: 82.4
-                                </p>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="tl-icon">
-                                    <i class="fas fa-briefcase"></i>
-                                </div>
-                                <p class="tl-duration">2021 - 2023</p>
-                                <h5>High School<span> <br> Capital College and Research Centre</span></h5>
-                                <p>
-                                    Kathmandu, Nepal <br><br>
-                                    GPA: 3.91 + 3.73
-                                </p>
-                            </div>
-                        </div>
+            <div class="timeline" data-bind-list="experience"></div>
+            <h4 class="stat-title">Educational <span>Experience</span></h4>
+            <div class="timeline" data-bind-list="education"></div>
         </section>
+
         <section class="container" id="portfolio">
             <div class="main-title">
                 <h2>My <span>Projects</span></h2>
             </div>
-            <p class="port-text">
-                Academic and professional projects that demonstrate my expertise in AI, Backend Development, and Data Science.
-            </p>
-            <div class="portfolios">
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/mediwo.png" alt="Mediwo">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Mediwo</h3>
-                        <p>Medical workflow and health management</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/Mediwo" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/voltvision.png" alt="VoltVision">
-                    </div>
-                    <div class="hover-items">
-                        <h3>VoltVision</h3>
-                        <p>Energy forecasting and power consumption analytics</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/VoltVision" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/rl-on-llms.png" alt="RL on LLMs">
-                    </div>
-                    <div class="hover-items">
-                        <h3>RL on LLMs</h3>
-                        <p>Reinforcement Learning applied to Large Language Models</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/RL-on-LLMs" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/leafguard.png" alt="LeafGuard">
-                    </div>
-                    <div class="hover-items">
-                        <h3>LeafGuard</h3>
-                        <p>Plant disease detection using computer vision</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/LeafGuard" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/urbanoasis.png" alt="UrbanOasis">
-                    </div>
-                    <div class="hover-items">
-                        <h3>UrbanOasis</h3>
-                        <p>Urban sustainability and green space management</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/UrbanOasis" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/celestial-odyssey.png" alt="Celestial Odyssey">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Celestial Odyssey</h3>
-                        <p>Space exploration and simulation</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/Celestial-Odyssey" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/guardian-shield.png" alt="Guardian Shield">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Guardian Shield</h3>
-                        <p>Security and threat detection system</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/Guardian-Shield" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/sylva.png" alt="Sylva">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Sylva</h3>
-                        <p>Generating trees in ThreeJS using fractals</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/Sylva" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/bitesmart.png" alt="BiteSmart">
-                    </div>
-                    <div class="hover-items">
-                        <h3>BiteSmart</h3>
-                        <p>Nutrition tracking and smart diet recommendation</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/BiteSmart" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/galactic-defenders.png" alt="Galactic Defenders">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Galactic Defenders</h3>
-                        <p>Space-themed game with AI enemies</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/Galactic-Defenders" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/ann-in-c.png" alt="ANN in C">
-                    </div>
-                    <div class="hover-items">
-                        <h3>ANN in C</h3>
-                        <p>Artificial Neural Networks implementation in C</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/ANN-in-C" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="image">
-                        <img src="img/projects/flappy-ai.png" alt="Flappy AI">
-                    </div>
-                    <div class="hover-items">
-                        <h3>Flappy AI</h3>
-                        <p>AI-powered Flappy Bird game with neural networks</p>
-                        <div class="icons">
-                            <a href="https://github.com/clerisy47/Flappy-AI" class="icon" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="port-text" data-bind="portfolioIntro"></p>
+            <div class="portfolios" data-bind-list="portfolio"></div>
         </section>
+
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -487,79 +89,11 @@
                 <div class="contact-content-con">
                     <div class="left-contact">
                         <h4>Contact me here</h4>
-                        <p>
-                            Please consider contacting me through the Linkedin or Gmail mentioned below.
-                        </p>
+                        <p data-bind="contactBlurb"></p>
                         <div class="contact-icons">
-                            <div class="contact-icon">
-
-                                <a href="https://www.github.com/clerisy47" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/clerisy47" target="_blank">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <!-- <a href="https://www.kaggle.com/clerisy47" target="_blank">
-                                    <i class="fab fa-kaggle"></i>
-                                </a> -->
-                                <!-- <a href="https://codeforces.com/profile/clerisy47" target="_blank">
-                                    <i class="fas fa-chart-simple"></i>
-                                </a> -->
-                                <a href="https://www.facebook.com/clerisy47" target="_blank">
-                                    <i class="fab fa-facebook"></i>
-                                </a>
-                                <a href="https://www.twitter.com/clerisy47" target="_blank">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </div>
+                            <div class="contact-icon" data-bind-list="social"></div>
                         </div>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location</span>
-                                </div>
-                                <p>
-                                    Koteshwor, Kathmandu
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>Email</span>
-                                </div>
-                                <p>
-                                    <span>clerisy47@gmail.com</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Education</span>
-                                </div>
-                                <p>
-                                    <span>IOE Pulchowk Campus</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-user-graduate"></i>
-                                    <span>Mobile Number</span>
-                                </div>
-                                <p>
-                                    <span>9860307243</span>
-                                </p>
-                            </div>
-                            <div class="contact-item">
-                                <div class="icon">
-                                    <i class="fas fa-globe-africa"></i>
-                                    <span>Languages</span>
-                                </div>
-                                <p>
-                                    <span>Nepali, English, Hindi</span>
-                                </p>
-                            </div>
-                        </div>
+                        <div class="contact-info" data-bind-list="contactInfo"></div>
                     </div>
                 </div>
             </div>
